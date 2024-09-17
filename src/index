@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>TypeScript React App</title>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+<head>
+  <title>Data Points</title>
+</head>
+<body>
+  <h1>Data Points</h1>
+  <ul>
+      {% for point in data_points %}
+      <li>{{ point.name }}: {{ point.value }} at {{ point.timestamp }}</li>
+      {% endfor %}
+  </ul>
+</body>
+</html>
